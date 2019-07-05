@@ -18,10 +18,21 @@ class LinkedList {
         this.head = new Node(data, this.head);
         this.size++;
     }
+
+    printListData() {
+        let current = this.head;
+        while(current) {
+            console.log(current.data)
+            current = current.next;
+        }
+    }
 }
 
 
 
 const ll = new LinkedList();
 ll.insertFirst(100);
-console.log(ll);
+ll.insertFirst(200);
+ll.insertFirst(300);
+//console.log(ll);
+ll.printListData();
