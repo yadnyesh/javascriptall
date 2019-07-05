@@ -1,11 +1,9 @@
-const n1 = {
-    data: 100
+class Node {
+    constructor(data, next = null) {
+        this.data = data;
+        this.next = next;            
+    }
 }
 
-const n2 = {
-    data: 200
-}
-
-n1.next = n2;
-
+const n1 = new Node(100);
 console.log(n1);
