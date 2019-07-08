@@ -80,5 +80,5 @@ ll.insertFirst(200);
 ll.insertFirst(300);
 ll.insertLast(400);
 ll.insertAt(5000,4);
-//console.log(ll);
+console.log(ll);
 ll.printListData();
